@@ -18,85 +18,55 @@
 		-ms-overflow-style: none;  /* IE and Edge */
 		scrollbar-width: none;  /* Firefox */
 		}
+
+		.linkedin-svg {
+			all: unset;
+			filter: saturate(1.3);
+			transition: filter 0.3s ease; /* Smooth transition for hover */
+		}
+
+		.linkedin-svg:hover {
+			/* filter: drop-shadow(1px 1px 2px rgba(255, 255, 255, 0.8)); */
+			filter: saturate(1.3) brightness(0.85) contrast(1.25);
+		}
+
+		.github-svg {
+			all: unset;
+			filter: saturate(1.3);
+			transition: filter 0.5s ease; /* Smooth transition for hover */
+		}
+
+		.github-svg:hover {
+			filter: brightness(0.8) contrast(1.25);
+		}
+
 	  </style>
-	<body class="is-preload">
+	<body class="is-preload" style="overflow: hidden;">
 			<div id="wrapper" class="fade-in">
 					<div id="intro">
 						<img src="images/member-giannis.jpg" alt="Avatar" style="width:200px;border-radius:50%;border: 2px solid white">
 						<br><br>
 						<h1>Ioannis Athanasopoulos</h1>
 						<h3>My portfolio</h3>
-						<p>Projects I've made throughout the years.</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
 					</div>
-				<!-- Header -->
-				<header id="header">
-					<a href="#email" class="logo">Contact me</a>
-				</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-							<li><a href="cv.html">CV</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/ioannis-athanasopoulos-3095201b3/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/John-Athanasopoulos" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">2 August, 2022</span>
-										<h2><a href="https://github.com/DataStories-UniPi/miniDB" target="_blank" rel="noopener noreferrer">University Python DBMS Project</a></h2>
-									</header>
-									<a href="https://github.com/DataStories-UniPi/miniDB" target="_blank" rel="noopener noreferrer" class="image fit"><img src="images/miniDB.png" alt="" /></a>
-									<p>Contribution to the Python DBMS project created by the DataStories Lab of University of Piraeus. Implemented different types of joins such as INLJ and SMJ and also tests for all the different functionalities.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/DataStories-UniPi/miniDB" target="_blank" rel="noopener noreferrer" class="button">See Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">17 August, 2020</span>
-										<h2><a href="https://github.com/John-Athanasopoulos/Java-Poker" target="_blank" rel="noopener noreferrer">Poker in Java</h2>
-									</header>
-									<a href="https://github.com/John-Athanasopoulos/Java-Poker" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/javapoker.jfif" alt="" /></a>
-									<p>A fully functional game of Texas Hold 'em Poker written solely on Java. In the game, you play against the computer. The game offers the ability to change cards and bet, giving the betting option to the computer too. This is the second time I tried to make a poker game.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/John-Athanasopoulos/Java-Poker" class="button" target="_blank" rel="noopener noreferrer">See Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">26 October, 2020</span>
-										<h2><a href="https://github.com/John-Athanasopoulos/Mathematical-Problems" target="_blank" rel="noopener noreferrer">Mathematical Theorems</a></h2>
-									</header>
-									<a href="https://github.com/John-Athanasopoulos/Mathematical-Problems" target="_blank" rel="noopener noreferrer" class="image fit"><img src="images/pythonmaths.jfif" alt="" /></a>
-									<p>A repository with calculation programs for mathematical problems. In this repository there are programs with which you can find the answer for mathematical problems, as finding an Eulerian Circuit for a 5 node graph, if it exists (spoiler: it does..).</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/John-Athanasopoulos/Mathematical-Problems" target="_blank" rel="noopener noreferrer" class="button">See Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">25 May, 2020</span>
-										<h2><a target="_blank" rel="noopener noreferrer" href="https://github.com/John-Athanasopoulos/Hamagen_copy">University C++ Assignment</a></h2>
-									</header>
-									<a href="https://github.com/John-Athanasopoulos/Hamagen_copy" target="_blank" rel="noopener noreferrer" class="image fit"><img src="images/cpphamagen.png" alt="" /></a>
-									<p>Program similar to HaMagen. It simulates the movement of people in a grid and calculates if they could possibly be Covid-19 patients. Additional implementations: Crowded Places, Repairing lost GPS Signals, Summarize days to reduce memory consumption.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/John-Athanasopoulos/Hamagen_copy" target="_blank" rel="noopener noreferrer" class="button">See Project</a></li>
-									</ul>
-								</article>
-							</section>
+					<div id="main" style="align-items: center;justify-content: center;">
+						<header id="header" style="flex-direction:unset;">
+							<a href="cv.html" class="logo">CV</a>
+							<a href="projects.html" class="logo">Projects</a>
+							<!-- <a href="mailto:john.athanasopoulos.dim@gmail.com" class="logo">Contact me</a> -->
+						</header>
+						<p style="all:unset; color: white;text-align: center;font-size: medium;">Graduate student of University of Piraeus, dept. of Informatics, currently pursuing my MSc in Data Science and Machine Learning at the National Technical University of Athens, dept. of Electrical and Computer Engineering (NTUA / ECE). My current interests lie in the fields of Mobility Data Analytics and Machine Learning, supported by a strong foundation in Object-Oriented Programming. I'm currently studying to extend my knowledge in the field of Data Science.</p>			
+						<br><br>
+						<a target="_blank" style="all:unset">
+							<center>
+								<img src="images/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/ioannis-athanasopoulos/')" class="linkedin-svg">
+								<img src="images/github.svg" onclick="window.open('https://github.com/John-Athanasopoulos')" class="github-svg">
+							</center>
+						</a>
+						<br><br><br>
 					</div>
 			</div>
 
